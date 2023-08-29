@@ -25,14 +25,8 @@ const nextConfig = {
 			{
 				hostname: 'localhost'
 			}
-		]
-	},
-	sassOptions: {
-		prependData: `
-			@use "./src/styles/mixins" as *;
-			@use "./src/styles/global/colors.scss" as *;
-			@use "./src/styles/global/settings.scss" as *;
-		`
+		],
+		domains: ['uploadthing.com']
 	}
 };
 

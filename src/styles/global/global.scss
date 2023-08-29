@@ -1,0 +1,47 @@
+@use './settings.scss' as *;
+@use './colors.scss' as *;
+@use '../mixins' as *;
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+html {
+	font-size: $base-font-size;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+body {
+	position: relative;
+	color: $body-color;
+	font-family: $body-font;
+	font-size: 100%;
+	line-height: 1.15;
+	text-rendering: optimizeSpeed;
+	min-height: 100vh;
+}
+
+button {
+	cursor: pointer;
+	border: none;
+	background: none;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+ul {
+	list-style: none;
+}
